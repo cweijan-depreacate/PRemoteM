@@ -87,7 +87,7 @@ namespace _1RM.Service
         public string PrimaryTextColor = "#FF232323";
 
         public string AccentMidColor = "#FFC3C3C3";
-        public string AccentLightColor = "#F5F0EB";
+        public string AccentLightColor = "#FF050505";
         public string AccentDarkColor = "#9C9C9C";
         public string AccentTextColor = "#FF373737";
 

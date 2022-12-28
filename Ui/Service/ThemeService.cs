@@ -22,7 +22,7 @@ namespace _1RM.Service
                 PrimaryDarkColor = "#FFE4E7EB",
                 PrimaryTextColor = "#FF232323",
                 AccentMidColor = "#FFC3C3C3",
-                AccentLightColor = "#F5F0EB",
+                AccentLightColor = "#FF050505",
                 AccentDarkColor = "#9C9C9C",
                 AccentTextColor = "#FF373737",
                 BackgroundColor = "#FFFFFFFF",
