@@ -32,7 +32,7 @@
                 <Border.Style>
                     <Style TargetType="Border">
                         <Setter Property="BorderBrush" Value="{DynamicResource DefaultBorderBrush}"></Setter>
-                        <Setter Property="BorderThickness" Value="2"></Setter>
+                        <Setter Property="BorderThickness" Value="0"></Setter>
                     </Style>
                 </Border.Style>
                 <Grid x:Name="WindowContentGrid" Background="{TemplateBinding Background}">
