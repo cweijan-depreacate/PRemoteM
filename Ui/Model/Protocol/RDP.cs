@@ -86,7 +86,7 @@ namespace _1RM.Model.Protocol
         public RDP() : base(ProtocolName, "RDP.V1", "RDP")
         {
             base.Port = "3389";
-            base.UserName = "Administrator";
+            base.UserName = "cweijan";
         }
 
         private bool? _isAdministrativePurposes = false;
