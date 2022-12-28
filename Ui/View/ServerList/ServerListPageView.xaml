@@ -722,7 +722,7 @@
                         <ColumnDefinition Width="Auto"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
                     <Button MinWidth="80"
-                                        Command="{Binding CmdShowTabByName}" CommandParameter=""
+                                        Command="{Binding CmdShowTabByName}" CommandParameter="" Visibility="Collapsed"
                                         Content="{DynamicResource All}">
                         <Button.Style>
                             <Style TargetType="Button" BasedOn="{StaticResource ButtonBarPrimaryStyle}">
