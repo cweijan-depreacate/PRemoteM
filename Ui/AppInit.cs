@@ -285,23 +285,7 @@ namespace _1RM
         public void InitOnLaunch()
         {
             KittyConfig.CleanUpOldConfig();
-
-            if (_localDataConnectionStatus != EnumDbStatus.OK)
-            {
-                string error = _localDataConnectionStatus.GetErrorInfo();
-                MessageBox.Show(error, IoC.Get<LanguageService>().Translate("messagebox_title_error"), MessageBoxButton.OK, MessageBoxImage.Error, MessageBoxResult.None, MessageBoxOptions.DefaultDesktopOnly);
-                IoC.Get<MainWindowViewModel>().ShowMe(goPage: EnumMainWindowPage.SettingsData);
-            }
-            else if (IoC.Get<ConfigurationService>().General.AppStartMinimized == false
-                || _isNewUser)
-            {
-                IoC.Get<MainWindowViewModel>().ShowMe(goPage: EnumMainWindowPage.List);
-                if (_isNewUser && PRemoteMTransferHelper.IsNeedTransfer())
-                {
-                    // import form PRemoteM db
-                    PRemoteMTransferHelper.TransAsync();
-                }
-            }
+            IoC.Get<MainWindowViewModel>().ShowMe(goPage: EnumMainWindowPage.List);
         }
     }
 }
