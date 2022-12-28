@@ -25,9 +25,7 @@
                     <ColumnDefinition Width="Auto" SharedSizeGroup="Selector"></ColumnDefinition>
                     <ColumnDefinition Width="Auto" SharedSizeGroup="Protocol"></ColumnDefinition>
                     <ColumnDefinition Width="40" SharedSizeGroup="Span"></ColumnDefinition>
-                    <ColumnDefinition Width="Auto" SharedSizeGroup="Name"></ColumnDefinition>
-                    <ColumnDefinition Width="Auto" SharedSizeGroup="Tags"></ColumnDefinition>
-                    <ColumnDefinition Width="Auto" SharedSizeGroup="BriefNote"></ColumnDefinition>
+                    <ColumnDefinition Width="50" SharedSizeGroup="Name"></ColumnDefinition>
                     <ColumnDefinition Width="Auto" SharedSizeGroup="Address"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
 
@@ -60,50 +58,9 @@
                                                    VerticalAlignment="Center">
                 </TextBlock>
 
-                <!--icon-->
-                <Grid Grid.Column="2" Width="30" HorizontalAlignment="Center" Margin="5 0">
-                    <Image Source="{Binding Server.IconImg}" 
-                           RenderOptions.BitmapScalingMode="LowQuality"
-                           Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor,AncestorType=Grid}}"></Image>
-                </Grid>
-
                 <!--display name-->
                 <Grid Grid.Column="3" ToolTip="{Binding Server.DisplayName}" Background="Transparent">
                     <TextBlock Margin="5 0 10 0" FontSize="14" VerticalAlignment="Center" TextTrimming="CharacterEllipsis" Text="{Binding Server.DisplayName}"></TextBlock>
-                </Grid>
-
-                <!--tags-->
-                <ItemsControl Grid.Column="4" Margin="5 0 10 0" MaxWidth="200" VerticalAlignment="Center" HorizontalAlignment="Right" ItemsSource="{Binding Server.Tags}">
-                    <ItemsControl.Resources>
-                        <serverList:ConverterTagName x:Key="ConverterTagName" />
-                    </ItemsControl.Resources>
-                    <ItemsControl.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <WrapPanel />
-                        </ItemsPanelTemplate>
-                    </ItemsControl.ItemsPanel>
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate DataType="system:String">
-                            <Grid Margin="3">
-                                <Button Content="{Binding Converter={StaticResource ConverterTagName}}" HorizontalAlignment="Left">
-                                    <Button.ToolTip>
-                                        <Label Content="{x:Static system:Environment.NewLine}" 
-                                               ContentStringFormat="{DynamicResource tag_tooltips}"/>
-                                    </Button.ToolTip>
-                                    <Button.InputBindings>
-                                        <MouseBinding Gesture="LeftClick" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=serverList:ServerListPageView}, Path=DataContext.CmdTagAddIncluded}" CommandParameter="{Binding}" />
-                                        <MouseBinding Gesture="Ctrl+LeftClick" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=serverList:ServerListPageView}, Path=DataContext.CmdTagAddIncluded}" CommandParameter="{Binding}" />
-                                        <MouseBinding Gesture="Ctrl+RightClick" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=serverList:ServerListPageView}, Path=DataContext.CmdTagAddExcluded}" CommandParameter="{Binding}" />
-                                    </Button.InputBindings>
-                                </Button>
-                            </Grid>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
-
-                <!--brief note -->
-                <Grid Grid.Column="5" VerticalAlignment="Center" Margin="0 0 10 0">
-                    <ContentControl Content="{Binding HoverNoteDisplayControl}"></ContentControl>
                 </Grid>
 
                 <!--address-->

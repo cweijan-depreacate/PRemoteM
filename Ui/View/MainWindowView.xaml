@@ -70,6 +70,7 @@
                              Text="{Binding MainFilterString, UpdateSourceTrigger=PropertyChanged}"
                              Tag="{DynamicResource 'Search (Ctrl+F)'}"
                              KeyUp="MainFilter_OnKeyUp" 
+                             Visibility="Collapsed"
                              VerticalAlignment="Center" HorizontalAlignment="Right" HorizontalContentAlignment="Left">
                         <TextBox.Style>
                             <Style TargetType="{x:Type TextBox}" BasedOn="{StaticResource TextBoxAccentStyle}">
