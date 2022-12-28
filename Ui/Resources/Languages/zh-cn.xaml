@@ -105,7 +105,7 @@
     <s:String x:Key="system_options_data_security_info_data_processing">数据处理中，请勿关闭程序。</s:String>
     <s:String x:Key="system_options_data_security_error_can_not_open">数据库：所选文件已被占用或不是数据库或该数据库已被加密！</s:String>
     <s:String x:Key="string_database_error_permission_denied">数据库：没有足够的权限读取，或数据库已被占用！</s:String>
-    <s:String x:Key="server_card_operate_duplicate">创建副本</s:String>
+    <s:String x:Key="server_card_operate_duplicate">复制连接</s:String>
     <s:String x:Key="server_card_operate_copy_address">复制地址到剪贴板</s:String>
     <s:String x:Key="server_card_operate_copy_username">复制用户名到剪贴板</s:String>
     <s:String x:Key="server_card_operate_copy_password">复制密码到剪贴板</s:String>
