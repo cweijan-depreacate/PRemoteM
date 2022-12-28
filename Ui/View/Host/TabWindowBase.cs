@@ -28,7 +28,7 @@ namespace _1RM.View.Host
 {
     public abstract class TabWindowBase : WindowChromeBase
     {
-        public const double TITLE_BAR_HEIGHT = 30;
+        public const double TITLE_BAR_HEIGHT = 25;
 
         protected TabWindowViewModel Vm;
         private TabablzControl? _tabablzControl = null!;
