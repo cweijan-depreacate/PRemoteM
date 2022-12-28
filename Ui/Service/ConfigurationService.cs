@@ -79,20 +79,20 @@ namespace _1RM.Service
 
     public class ThemeConfig
     {
-        public string ThemeName = "Dark";
+        public string ThemeName = "Light";
 
-        public string PrimaryMidColor = "#323233";
-        public string PrimaryLightColor = "#474748";
-        public string PrimaryDarkColor = "#2d2d2d";
-        public string PrimaryTextColor = "#cccccc";
+        public string PrimaryMidColor = "#FFF2F3F5";
+        public string PrimaryLightColor = "#FFFFFFFF";
+        public string PrimaryDarkColor = "#FFE4E7EB";
+        public string PrimaryTextColor = "#FF232323";
 
-        public string AccentMidColor = "#FF007ACC";
-        public string AccentLightColor = "#FF32A7F4";
-        public string AccentDarkColor = "#FF0061A3";
-        public string AccentTextColor = "#FFFFFFFF";
+        public string AccentMidColor = "#FFC3C3C3";
+        public string AccentLightColor = "#F5F0EB";
+        public string AccentDarkColor = "#9C9C9C";
+        public string AccentTextColor = "#FF373737";
 
-        public string BackgroundColor = "#1e1e1e";
-        public string BackgroundTextColor = "#cccccc";
+        public string BackgroundColor = "#FFFFFFFF";
+        public string BackgroundTextColor = "#000000";
 
         #region GetColor
         public System.Windows.Media.Color GetPrimaryMidColor => ColorAndBrushHelper.HexColorToMediaColor(PrimaryMidColor);
