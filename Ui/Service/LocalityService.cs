@@ -28,8 +28,8 @@ namespace _1RM.Service
 
     internal class LocalitySettings
     {
-        public double MainWindowWidth = 800;
-        public double MainWindowHeight = 530;
+        public double MainWindowWidth = 500;
+        public double MainWindowHeight = 330;
         public double TabWindowTop = -1;
         public double TabWindowLeft = -1;
         public double TabWindowWidth = 800;
