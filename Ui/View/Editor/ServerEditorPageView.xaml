@@ -70,14 +70,14 @@
                                                            Selections="{Binding NameSelections, Mode=OneTime}"/>
                                 </controls:GridWith4Columns>
 
-                                <controls:GridWith4Columns>
+                                <controls:GridWith4Columns Visibility="Collapsed">
                                     <TextBlock Grid.Column="0" Text="{DynamicResource Tags}" Style="{StaticResource RowHeader}"></TextBlock>
                                     <controls:TagsEditor x:Name="TagsEditor" Grid.Column="1" 
                                                  Tags="{Binding Server.Tags, Mode=TwoWay}"
                                                  TagsForSelect="{Binding TagSelections, Mode=OneTime}"></controls:TagsEditor>
                                 </controls:GridWith4Columns>
 
-                                <controls:GridWith4Columns Margin="0">
+                                <controls:GridWith4Columns Margin="0" Visibility="Collapsed">
                                     <TextBlock Grid.Column="0" Text="{DynamicResource Logo}" Style="{StaticResource RowHeader}"></TextBlock>
 
                                     <StackPanel Grid.Column="1" Orientation="Horizontal">
@@ -113,7 +113,7 @@
                                                            Text="{Binding Server.ColorHex}"></TextBlock>
                                     </StackPanel>
                                 </controls:GridWith4Columns>
-                                <Grid Name="PopupLogoSelector" Height="0">
+                                <Grid Name="PopupLogoSelector" Height="0" Visibility="Collapsed">
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Style="{StaticResource EditorRowGridTitle}" Text=""></TextBlock>
                                         <Grid Style="{StaticResource EditorRowGridInput}" Width="Auto">
@@ -197,7 +197,7 @@
                                 </Grid>
 
 
-                                <controls:GridWith4Columns Margin="0 15 0 0">
+                                <controls:GridWith4Columns Margin="0 15 0 0" Visibility="Collapsed">
                                     <TextBlock Grid.Column="0" Text="{DynamicResource 'Script before connect'}" Style="{StaticResource RowHeader}"></TextBlock>
                                     <TextBox Grid.Column="1"
                                              Text="{Binding Server.CommandBeforeConnected,UpdateSourceTrigger=PropertyChanged, ValidatesOnExceptions=True}"
@@ -218,7 +218,7 @@
                                     </StackPanel>
                                 </controls:GridWith4Columns>
 
-                                <controls:GridWith4Columns Margin="0 5 0 15">
+                                <controls:GridWith4Columns Margin="0 5 0 15" Visibility="Collapsed">
                                     <CheckBox Grid.Column="1"
                                               VerticalContentAlignment="Top"
                                               IsChecked="{Binding Server.HideCommandBeforeConnectedWindow}" 
@@ -229,7 +229,7 @@
                                     </CheckBox>
                                 </controls:GridWith4Columns>
 
-                                <controls:GridWith4Columns>
+                                <controls:GridWith4Columns Visibility="Collapsed">
                                     <TextBlock Grid.Column="0" Text="{DynamicResource 'Script after disconnected'}" Style="{StaticResource RowHeader}"></TextBlock>
                                     <TextBox Grid.Column="1"
                                              Text="{Binding Server.CommandAfterDisconnected,UpdateSourceTrigger=PropertyChanged, ValidatesOnExceptions=True}"

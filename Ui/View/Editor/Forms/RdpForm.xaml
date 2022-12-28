@@ -36,7 +36,7 @@
                 </StackPanel>
             </Grid>
 
-            <Grid Style="{StaticResource EditorRowGrid}">
+            <Grid Style="{StaticResource EditorRowGrid}" Visibility="Collapsed">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Style="{StaticResource EditorRowGridTitle}" Text="Domain"></TextBlock>
                     <Grid Style="{StaticResource EditorRowGridInput}">
@@ -63,7 +63,7 @@
                     </Grid>
                 </StackPanel>
             </Grid>
-            <Grid Style="{StaticResource EditorRowGrid}">
+            <Grid Style="{StaticResource EditorRowGrid}" Visibility="Collapsed">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Style="{StaticResource EditorRowGridTitle}" Text="LoadBalanceInfo"></TextBlock>
                     <Grid Style="{StaticResource EditorRowGridInput}">
