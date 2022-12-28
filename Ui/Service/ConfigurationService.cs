@@ -32,7 +32,7 @@ namespace _1RM.Service
     public class GeneralConfig
     {
         #region General
-        public string CurrentLanguageCode = "en-us";
+        public string CurrentLanguageCode = "zh-cn";
         public bool AppStartAutomatically = true;
         public bool AppStartMinimized = true;
         public bool ListPageIsCardView = false;
