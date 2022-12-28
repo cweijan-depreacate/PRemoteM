@@ -239,8 +239,8 @@ TabWindowBase: BringWindowToTop({_myHandle})");
         {
             if (Vm?.SelectedItem?.Content != null)
             {
-                this.Icon = IoC.Get<ConfigurationService>().General.ShowSessionIconInSessionWindow ?
-                    Vm.SelectedItem.Content.ProtocolServer.IconImg : null;
+                // this.Icon = IoC.Get<ConfigurationService>().General.ShowSessionIconInSessionWindow ?
+                //     Vm.SelectedItem.Content.ProtocolServer.IconImg : null;
             }
         }
 
