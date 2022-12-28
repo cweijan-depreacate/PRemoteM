@@ -274,7 +274,7 @@
                     </StackPanel>
 
 
-                    <controls:GridWith4Columns VerticalAlignment="Top" MinHeight="60">
+                    <controls:GridWith4Columns VerticalAlignment="Top" MinHeight="60"  Visibility="Collapsed">
                         <Grid Margin="40 25" Grid.Column="2" Grid.ColumnSpan="2">
                             <StackPanel>
                                 <Grid>
