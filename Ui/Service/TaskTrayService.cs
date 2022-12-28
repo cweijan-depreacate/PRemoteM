@@ -35,9 +35,9 @@ namespace _1RM.Service
                 Visible = true
             };
             _taskTrayIcon.Visible = false;
-            ReloadTaskTrayContextMenu();
-            GlobalEventHelper.OnLanguageChanged -= ReloadTaskTrayContextMenu;
-            GlobalEventHelper.OnLanguageChanged += ReloadTaskTrayContextMenu;
+            // ReloadTaskTrayContextMenu();
+            // GlobalEventHelper.OnLanguageChanged -= ReloadTaskTrayContextMenu;
+            // GlobalEventHelper.OnLanguageChanged += ReloadTaskTrayContextMenu;
             _taskTrayIcon.MouseDoubleClick -= TaskTrayIconOnMouseDoubleClick;
             _taskTrayIcon.MouseDoubleClick += TaskTrayIconOnMouseDoubleClick;
             _taskTrayIcon.Visible = true;
