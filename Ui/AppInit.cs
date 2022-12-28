@@ -278,7 +278,7 @@ namespace _1RM
                 dataSourceService.AddOrUpdateDataSourceAsync(config);
             }
             IoC.Get<SessionControlService>();
-            IoC.Get<TaskTrayService>().TaskTrayInit();
+            // IoC.Get<TaskTrayService>().TaskTrayInit();
         }
 
 

@@ -118,7 +118,7 @@ namespace _1RM
             _desktopResolutionWatcher.OnDesktopResolutionChanged += () =>
             {
                 GlobalEventHelper.OnScreenResolutionChanged?.Invoke();
-                IoC.Get<TaskTrayService>().TaskTrayInit();
+                // IoC.Get<TaskTrayService>().TaskTrayInit();
             };
         }
 
