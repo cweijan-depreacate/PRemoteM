@@ -123,7 +123,7 @@
                                     <!--header item icon-->
                                     <Border Grid.Column="1" Padding="4 0 4 0">
                                         <Grid Width="20" Height="20" VerticalAlignment="Center" HorizontalAlignment="Center">
-                                            <Image Source="{Binding IconImg}" Stretch="Uniform"></Image>
+                                            <Image Source="/Resources/Icons/000_OS/000_Win11_0.png" Stretch="Uniform"></Image>
                                         </Grid>
                                     </Border>
 
