@@ -147,19 +147,19 @@ namespace _1RM
                     }
 
 
-                    if (_isNewUser)
-                    {
-                        if (PRemoteMTransferHelper.IsNeedTransfer())
-                        {
-                            PRemoteMTransferHelper.ReadAsync();
-                        }
+                    // if (_isNewUser)
+                    // {
+                    //     if (PRemoteMTransferHelper.IsNeedTransfer())
+                    //     {
+                    //         PRemoteMTransferHelper.ReadAsync();
+                    //     }
 
-                        // 新用户显示引导窗口
-                        var guidanceWindowViewModel = new GuidanceWindowViewModel(LanguageService, NewConfiguration, profileModeIsPortable, profileModeIsEnabled);
-                        var guidanceWindow = new GuidanceWindow(guidanceWindowViewModel);
-                        guidanceWindow.ShowDialog();
-                        isPortableMode = guidanceWindowViewModel.ProfileModeIsPortable;
-                    }
+                    //     // 新用户显示引导窗口
+                    //     var guidanceWindowViewModel = new GuidanceWindowViewModel(LanguageService, NewConfiguration, profileModeIsPortable, profileModeIsEnabled);
+                    //     var guidanceWindow = new GuidanceWindow(guidanceWindowViewModel);
+                    //     guidanceWindow.ShowDialog();
+                    //     isPortableMode = guidanceWindowViewModel.ProfileModeIsPortable;
+                    // }
 
                     // 自动创建标志文件
                     if (permissionForPortable)
