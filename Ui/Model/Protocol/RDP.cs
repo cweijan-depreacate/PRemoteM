@@ -262,7 +262,7 @@ namespace _1RM.Model.Protocol
             set => SetAndNotifyIfChanged(ref _enableRedirectDrivesPlugIn, value);
         }
 
-        private bool? _enableKeyCombinations = true;
+        private bool? _enableKeyCombinations = false;
         [DefaultValue(true)]
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Populate)]
         public bool? EnableKeyCombinations
